@@ -1,0 +1,24 @@
+spring:
+  rabbitmq:
+    virtual-host: canal
+    host: 192.168.92.132
+    publisher-confirm-type: simple
+    username: guest
+    password: guest
+    port: 5672
+
+
+  #数据源
+  datasource:
+    url: jdbc:mysql://192.168.92.132:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: 2787901285q
+  data:
+    redis:
+      host: 192.168.92.132
+      password: 2787901285q
+
+
+mybatis-plus:
+  mapper-locations: classpath:com/kxj/*/mapper/xml/*.xml
+
